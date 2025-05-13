@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cargando...</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000000; /* Fondo negro */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .loader-img {
+      width: 100px;
+      height: 100px;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.7; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+  <script>
+    // Redirige después de 3 segundos a Outlook
+    setTimeout(() => {
+      window.location.href = "https://outlook.com";
+    }, 3000);
+  </script>
+</head>
+<body>
+  <img class="loader-img" src="https://yt3.googleusercontent.com/gt5trm1kRFwoa0L9KVru8wqT195M6LHUrX-_ekN1aIHSbJ69NZ5iQsL90JnzNf95AgsRyLH6Jg=s900-c-k-c0x00ffffff-no-rj" alt="Cargando...">
+</body>
+</html>
